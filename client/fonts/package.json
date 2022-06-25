@@ -1,0 +1,14 @@
+{
+  "name": "stonix-fonts",
+  "private": true,
+  "author": "Mohit Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "typeface-lato": "^1.1.13",
+    "typeface-nunito-sans": "^1.1.13",
+    "typeface-open-sans": "^1.1.13",
+    "typeface-roboto": "^1.1.13",
+    "typeface-source-sans-pro": "^1.1.5",
+    "typeface-ubuntu": "^1.1.13"
+  }
+}

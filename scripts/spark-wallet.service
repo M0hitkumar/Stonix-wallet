@@ -1,0 +1,26 @@
+[Unit]
+Description=Stonix Lightning Wallet
+Requires=lightningd.service
+After=lightningd.service
+
+[Service]
+User={user}
+Group={user}
+Restart=on-failure
+
+ExecStart={cmd}
+
+SyslogIdentifier=stonix-wallet
+PIDFile=/var/run/stonix-wallet.pid
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+
+# Hardening measures
+PrivateTmp=true
+ProtectSystem=full
+NoNewPrivileges=true
+PrivateDevices=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,37 @@
+{
+  "name": "stonix-fonts",
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "typeface-lato": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-lato/-/typeface-lato-1.1.13.tgz",
+      "integrity": "sha512-sTn5k3+fagGOi8FQfN2MPeUiTdvG0Z3LVqCaQdsg2sYa0fzNteFZussizdwiPxF45OoFN3zdU/ci+PtjolNSPQ=="
+    },
+    "typeface-nunito-sans": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-nunito-sans/-/typeface-nunito-sans-1.1.13.tgz",
+      "integrity": "sha512-wpRTCwHdHcq4CKBBGzTDNAjck64O1prpCjKiUJyMFHn+E9k1aELJuSVeMBsgScdR1b5u7HFP1Px7Gi2OUMu33w=="
+    },
+    "typeface-open-sans": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-open-sans/-/typeface-open-sans-1.1.13.tgz",
+      "integrity": "sha512-lVGVHvYl7UJDFB9vN8r7NHw3sVm7Rjeow6b9AeABc/J+2mDaCkmcdVtw3QZnsJW39P+xm5zeggIj9gLHYGn9Iw=="
+    },
+    "typeface-roboto": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-roboto/-/typeface-roboto-1.1.13.tgz",
+      "integrity": "sha512-YXvbd3a1QTREoD+FJoEkl0VQNJoEjewR2H11IjVv4bp6ahuIcw0yyw/3udC4vJkHw3T3cUh85FTg8eWef3pSaw=="
+    },
+    "typeface-source-sans-pro": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-source-sans-pro/-/typeface-source-sans-pro-1.1.13.tgz",
+      "integrity": "sha512-eCczLh0FYByjVoMxZVDfSSTI8A6qJOBJftgWBVJL63AuemQTTvMU8DEk6ud/TQhkbIwWZ3A7ll/NfS9yI0lIrQ=="
+    },
+    "typeface-ubuntu": {
+      "version": "1.1.13",
+      "resolved": "https://registry.npmjs.org/typeface-ubuntu/-/typeface-ubuntu-1.1.13.tgz",
+      "integrity": "sha512-Rg1WdJd8fXr2nKF4/UqFw4Y7IKhomEBI7z9ZEyRf0YRV6ue+OipamCNEIEyhXZlhymde0RQrWMmagbyeyOQwSA=="
+    }
+  }
+}

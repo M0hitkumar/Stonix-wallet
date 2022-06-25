@@ -1,0 +1,65 @@
+{
+  "name": "stonix-wallet",
+  "version": "0.0.1-rc",
+  "androidVer": 222,
+  "description": "A minimalistic wallet GUI for c-lightning",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "start": "./scripts/start.sh",
+    "prepublishOnly": "npm run dist:npm",
+    "dist:npm": "./scripts/build.sh",
+    "dist:cordova": "cd cordova && npm run dist --",
+    "dist:electron": "cd electron && npm run dist --",
+    "release": "./scripts/release.sh"
+  },
+  "repository": "https://github.com/M0hitkumar/stonix-wallet",
+  "files": [
+    "dist",
+    "npm-shrinkwrap.json"
+  ],
+  "keywords": [
+    "brocoin",
+    "lightning",
+    "wallet",
+    "lightning-wallet",
+    "lightning-network",
+    "c-lightning"
+  ],
+  "author": "Mohit Kumar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "clightningd-client": "^0.1.4",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "greenlock-store-fs": "^3.2.0",
+    "helmet": "^4.6.0",
+    "ini": "^2.0.0",
+    "is-ip": "^3.1.0",
+    "meow": "^5.0.0",
+    "mkdirp": "^1.0.4",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.25",
+    "qrcode": "^1.4.4",
+    "superagent": "^6.1.0",
+    "superagent-proxy": "github:shesek/superagent-proxy#b512f8bbcf1baa196058922ee3b6cfe45375ebc9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.4",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4"
+  },
+  "optionalDependencies": {
+    "greenlock": "^2.8.8",
+    "node-forge": "^0.10.0",
+    "qrcode-terminal": "^0.12.0",
+    "selfsigned": "^1.10.11"
+  }
+}

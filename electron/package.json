@@ -1,0 +1,70 @@
+{
+  "name": "stonix-wallet",
+  "description": "A minimalistic wallet GUI for c-lightning",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "./build.sh"
+  },
+  "author": "Mohit Kumar",
+  "repository": "https://github.com/M0hitkumar/stonix-wallet.git",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "browserify-package-json": "^1.0.1",
+    "bundle-collapser": "^1.4.0",
+    "electron": "^8.5.5",
+    "electron-builder": "^22.11.7",
+    "electron-packager": "^15.5.1",
+    "terser": "^5.7.2"
+  },
+  "build": {
+    "appId": "com.stonix.wallet",
+    "productName": "Stonix",
+    "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
+    "afterPack": "./hook-afterPack.js",
+    "files": [
+      "**/*",
+      "build/icon.*",
+      "!*.sh",
+      "!hook-*.js"
+    ],
+    "protocols": {
+      "name": "Lightning Payment",
+      "schemes": [
+        "lightning"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.finance",
+      "target": "zip"
+    },
+    "linux": {
+      "executableName": "stonix-desktop",
+      "target": [
+        "AppImage",
+        "deb",
+        "snap",
+        "tar.gz"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "artifactName": "${name}-${version}-${os}-setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "${name}-${version}-${os}-portable.${ext}"
+    }
+  },
+  "dependencies": {
+    "electron-debug": "^3.2.0",
+    "electron-store": "^6.0.1"
+  }
+}
